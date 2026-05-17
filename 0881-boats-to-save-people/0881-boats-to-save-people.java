@@ -1,6 +1,6 @@
 class Solution {
     public int numRescueBoats(int[] people, int limit) {
-        int n=people.length;
+        int n =people.length;
         Arrays.sort(people);
         int low=0;
         int high=n-1;
@@ -13,7 +13,7 @@ class Solution {
             }
             else{
                 count++;
-                 high--;
+                high--;
             }
         }
         return count;
