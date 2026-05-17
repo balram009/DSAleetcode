@@ -6,7 +6,7 @@ class Solution {
         for(int i=0; i<n;i++){
             int currp=prices[i]-minp;
             minp=Math.min(prices[i], minp);
-            maxp=Math.max(maxp, currp);
+            maxp=Math.max(currp, maxp);
         }
         return maxp;
     }
