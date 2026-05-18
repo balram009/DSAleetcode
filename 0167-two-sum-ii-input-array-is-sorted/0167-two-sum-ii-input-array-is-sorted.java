@@ -3,7 +3,7 @@ class Solution {
         int n=numbers.length;
         int low=0;
         int high=n-1;
-        int [] res=new int [2];
+        int [] res=new int[2];
         while(low<high){
             if(numbers[low]+numbers[high]==target){
                 res[0]=low+1;
@@ -16,7 +16,7 @@ class Solution {
             else{
                 low++;
             }
-        }        
+        }
         return res;
     }
 }
